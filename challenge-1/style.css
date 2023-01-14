@@ -146,7 +146,7 @@ main {
 }
 
 /* Tablet */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .inner-container {
     width: 80%;
   }
@@ -160,7 +160,7 @@ main {
 }
 
 /* Desktop */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   .inner-container {
     width: 60%;
   }
