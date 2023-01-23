@@ -89,15 +89,15 @@ main {
 }
 
 .main__toolbar__left-side__search {
-  gap: 2.9em;
+  gap: 1.217em;
   border: 1px solid rgba(10, 37, 64, 0.32);
   border-radius: 6px;
   height: 44px;
-  padding: 0 0.5em;
+  padding: 0 1.4em;
   width: 35rem;
   transition: all 0.3s;
 }
-.main__toolbar__left-side__search__image {
+.main__toolbar__left-side__search__img {
   width: 2rem;
   height: 2rem;
 }
@@ -105,7 +105,7 @@ main {
   outline: none;
   border: none;
   background-color: transparent;
-  width: calc(100% - 2rem);
+  width: calc(100% - 1.4rem);
   height: 2rem;
   font-size: 1.4rem;
 }
