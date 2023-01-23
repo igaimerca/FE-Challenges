@@ -2,82 +2,89 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Challenge 1</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="shortcut icon" href="./assets/star_filled.svg" type="image/x-icon">
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets/star_filled.svg" type="image/x-icon" />
 </head>
 
 <body>
-  <nav class="flex items-center justify-between">
+  <nav class="navbar flex items-center justify-between">
     <h3>Placeholder</h3>
-    <div class="right-side flex">
-      <img src="./assets/zap.svg" alt="">
-      <p>What's new <span class="badge flex items-center justify-center">2</span> </p>
+    <div class="navbar__right-side flex">
+      <img src="./assets/zap.svg" alt="" />
+      <p class="navbar__right-side__subtitle">
+        What's new
+        <span class="navbar__right-side__subtitle__badge flex items-center justify-center">2</span>
+      </p>
     </div>
   </nav>
-  <main>
-    <div class="inner-container flex items-center justify-center flex-col">
+  <main class="main">
+    <div class="main__inner flex items-center justify-center flex-col">
       <header class="flex flex-col items-center justify-center">
         <h1>You need just few steps to have a beautiful Vetrina!</h1>
         <p>Need help? Contact our <a href="">client support</a></p>
       </header>
-      <p class="configuration-info flex items-center justify-center">
+      <p class="main__inner__configuration-info flex items-center justify-center">
         The configuration of your vetrina is at 20%
       </p>
-      <div class="standard-wizard">
-        <h2>Standard Wizard</h2>
-        <div class="wizard-cards-container">
-          <div class="wizard-card flex flex-col items-center justify-center">
+      <div class="main__inner__standard-wizard">
+        <h2 class="main__inner__standard-wizard__title">Standard Wizard</h2>
+        <div class="main__inner__standard-wizard__cards">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Add Logo and Cover image</p>
-            <img src="./assets/wesbite_setup.svg" alt="">
+            <img src="./assets/wesbite_setup.svg" alt="" />
           </div>
-          <div class="wizard-card flex flex-col items-center justify-center">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Add social links</p>
-            <img src="./assets/social_dashboard.svg" alt="">
+            <img src="./assets/social_dashboard.svg" alt="" />
           </div>
-          <div class="wizard-card flex flex-col items-center justify-center">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Add at least 3 products</p>
-            <img src="./assets/edit_photo.svg" alt="">
+            <img src="./assets/edit_photo.svg" alt="" />
           </div>
-          <div class="wizard-card flex flex-col items-center justify-center">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Share your shop!</p>
-            <img src="./assets/social_girl.svg" alt="">
+            <img src="./assets/social_girl.svg" alt="" />
           </div>
-          <div class="wizard-card flex flex-col items-center justify-center">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Set up delivery options</p>
-            <img src="./assets/on_the_way.svg" alt="">
+            <img src="./assets/on_the_way.svg" alt="" />
           </div>
-          <div class="wizard-card flex flex-col items-center justify-center">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Set up checkout payments</p>
-            <img src="./assets/credit_card.svg" alt="">
+            <img src="./assets/credit_card.svg" alt="" />
           </div>
         </div>
       </div>
-      <div class="advanced-wizard">
-        <h2 class="flex">Advanced Wizard <span class="text-muted flex items-center"> <img src="./assets/star_filled.svg"
-              alt="">&nbsp;Update your plan</span></h2>
-        <div class="advanced-wizard-cards wizard-cards-container">
-          <div class="wizard-card flex flex-col items-center justify-center">
+      <div class="main__inner__advanced-wizard">
+        <h2 class="main__inner__advanced-wizard__title flex">
+          Advanced Wizard
+          <span class="text-muted flex items-center">
+            <img src="./assets/star_filled.svg" alt="" />&nbsp;Update your
+            plan</span>
+        </h2>
+        <div class="main__inner__advanced-wizard__cards">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Discount products</p>
-            <img src="./assets/discount.svg" alt="">
-            <img src="./assets/star_filled.svg" class="star-icon" alt="">
+            <img src="./assets/discount.svg" alt="" />
+            <img src="./assets/star_filled.svg" class="star-icon" alt="" />
           </div>
-          <div class="wizard-card flex flex-col items-center justify-center">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Featured products</p>
-            <img src="./assets/select_player.svg" alt="">
-            <img src="./assets/star_filled.svg" class="star-icon" alt="">
+            <img src="./assets/select_player.svg" alt="" />
+            <img src="./assets/star_filled.svg" class="star-icon" alt="" />
           </div>
-          <div class="wizard-card flex flex-col items-center justify-center">
+          <div class="main__inner__wizard__cards__card flex flex-col items-center justify-center">
             <p>Product Gallery</p>
-            <img src="./assets/gallery.svg" alt="">
-            <img src="./assets/star_filled.svg" class="star-icon" alt="">
+            <img src="./assets/gallery.svg" alt="" />
+            <img src="./assets/star_filled.svg" class="star-icon" alt="" />
           </div>
         </div>
       </div>
