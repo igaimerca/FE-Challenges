@@ -1,8 +1,10 @@
 html {
   font-size: 62.5%;
 }
-body {
+* {
   box-sizing: border-box;
+}
+body {
   padding: 0;
   margin: 0;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial;
@@ -43,6 +45,16 @@ small {
 }
 .gap-sm {
   gap: 0.5em;
+}
+.main__toolbar {
+  display: none;
+  padding: 0px 2em;
+}
+.main__toolbar__left-side {
+  width: 65%;
+}
+.main__toolbar__right-side {
+  width: 40%;
 }
 .main__cards__card__info__tag {
   color: #fff;
@@ -132,7 +144,7 @@ select option {
   background: #21b8f9;
   color: #fff;
 }
-.add-product-btn {
+.main__toolbar__right-side__add-product-btn {
   color: #fff;
   border: none;
   padding: 12px 1.6rem;
@@ -306,16 +318,7 @@ select option {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(196, 201, 211);
 }
-.main__toolbar {
-  display: none;
-  padding: 0px 2em;
-}
-.main__toolbar__left-side {
-  width: 65%;
-}
-.main__toolbar__right-side {
-  width: 40%;
-}
+
 /* Tablet */
 @media screen and (min-width: 900px) {
   .main__cards {
