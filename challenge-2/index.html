@@ -19,20 +19,21 @@
 
 <body>
   <nav class="ld-black-1 flex items-center justify-between">
-    <h3>Products</h3>
-    <div class="right-side flex">
+    <h3 class="h3--bold">Products</h3>
+    <div class="nav__right-side flex">
       <img src="./assets/zap.svg" alt="">
-      <p>What's new <span class="badge flex items-center justify-center">2</span> </p>
+      <p class="nav__right-side__p">What's new <span
+          class="nav__right-side__p__badge flex items-center justify-center">2</span> </p>
     </div>
   </nav>
   <main>
-    <div class="toolbar ld-black-4 flex items-center justify-around gap">
-      <div class="flex items-center justify-between toolbar-left-side">
+    <section class="main__toolbar ld-black-4 flex items-center justify-around gap">
+      <div class="flex items-center justify-between main__toolbar__left-side">
         <div class="flex items-center gap">
           <div class="flex items-center gap">
-            <div id="search" class="search flex items-center justify-center">
-              <img src="./assets/search.svg" alt="">
-              <input type="text" placeholder="Cerca un prodotto...">
+            <div id="search" class="main__toolbar__left-side__search flex items-center justify-center">
+              <img class="main__toolbar__left-side__search__img" src="./assets/search.svg" alt="">
+              <input class="main__toolbar__left-side__search__input" type="text" placeholder="Cerca un prodotto...">
             </div>
             <h3>Products (24 / 100)</h3>
           </div>
@@ -47,7 +48,7 @@
           </label>
         </form>
       </div>
-      <div class="toolbar-right-side flex items-center gap">
+      <div class="main__toolbar__right-side flex items-center justify-between gap">
         <div class="vertical-line"></div>
         <div class="flex items-center select-container">
           <select name="" id="">
@@ -65,151 +66,153 @@
           <button class="add-product-btn">+ &nbsp; Add product</button>
         </div>
       </div>
-    </div>
-    <div class="cards justify-center">
-      <div class="card flex justify-between">
+    </section>
+    <section class="main__cards justify-center">
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-      <div class="card flex justify-between">
+        <div class="main__cards__card__label">9</div>
+      </article>
+
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-      <div class="card flex justify-between">
+        <div class="main__cards__card__label">9</div>
+      </article>
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-      <div class="card flex justify-between">
+        <div class="main__cards__card__label">9</div>
+      </article>
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-      <div class="card flex justify-between">
+        <div class="main__cards__card__label">9</div>
+      </article>
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-      <div class="card flex justify-between">
+        <div class="main__cards__card__label">9</div>
+      </article>
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-      <div class="card flex justify-between">
+        <div class="main__cards__card__label">9</div>
+      </article>
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-      <div class="card flex justify-between">
+        <div class="main__cards__card__label">9</div>
+      </article>
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-      <div class="card flex justify-between">
+        <div class="main__cards__card__label">9</div>
+      </article>
+      <article class="main__cards__card flex justify-between gap">
         <img src="./assets/card-img.png" alt="">
-        <div class="card-info flex flex-col items-start">
+        <div class="main__cards__card__info flex flex-col items-start">
           <h2 class="ld-black-1">Caprese</h2>
           <span class="ld-black-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros arcu elit nunc
             consectetur at.</span>
-          <span class="x-small tag flex items-center justify-center">Main Course</span>
-          <span class="variants">8 variants</span>
+          <span class="x-small main__cards__card__info__tag flex items-center justify-center">Main Course</span>
+          <span class="main__cards__card__info__variants">8 variants</span>
           <div class="flex gap">
-            <p class="ld-black-1 price-before">da 5,20 €</p>
+            <p class="ld-black-1 main__cards__card__info__price-before">da 5,20 €</p>
             <p class="ld-green">da 5,20 €</p>
           </div>
         </div>
-        <div class="card-label">9</div>
-      </div>
-    </div>
-    <div class="pagination-toolbar flex gap items-center justify-end">
+        <div class="main__cards__card__label">9</div>
+      </article>
+    </section>
+    <section class="pagination-toolbar flex gap items-center justify-end">
       <p>Products per page</p>
       <p class="flex items-center gap-sm">25 <img src="./assets/chevron_down.svg" alt=""></p>
       <p>1-25 of 25</p>
-      <p class="flex gap-sm items-center"><img src="./assets/chevron_left.svg" alt=""> <img src="./assets/chevron_right.svg" alt=""></p>
+      <p class="flex gap-sm items-center"><img src="./assets/chevron_left.svg" alt=""> <img
+          src="./assets/chevron_right.svg" alt=""></p>
 
-    </div>
+    </section>
   </main>
 
   <script>
