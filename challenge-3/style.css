@@ -34,7 +34,7 @@ h4 {
   padding: 0;
   margin: 0;
 }
-.h4--bold {
+.bold {
   font-weight: 600 !important;
 }
 h5 {
@@ -71,13 +71,12 @@ p {
 }
 .navbar__right-side__subtitle__badge {
   position: absolute;
-  top: -1.8rem;
+  top: -1.5rem;
   right: -1.4rem;
   background: #f33451;
-  padding: 0.5em;
   border-radius: 50px;
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
   color: #fff;
 }
 main {
@@ -86,7 +85,7 @@ main {
   padding: 11.2em 0;
 }
 .main__inner {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   gap: 3rem;
 }
@@ -94,7 +93,9 @@ main {
   gap: 3rem;
   flex-direction: column;
 }
-.main__inner__stats__card__header {
+.main__inner__stats__card__header,
+.main__inner__extensions__header,
+.main__inner__news__header__left-side {
   gap: 1.6rem;
 }
 .main__inner__stats__card {
@@ -113,8 +114,13 @@ main {
   box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08),
     0px 4px 8px rgba(50, 50, 71, 0.06);
   border-radius: 1rem;
+  gap: 2.2rem;
+}
+.main__inner__extensions__inner_cards {
+  gap: 2.4rem;
 }
 .main__inner__news {
+  gap: 4.6rem;
   min-height: 61.7rem;
   padding: 3.05rem 2.6rem;
   background: #ffffff;
@@ -122,13 +128,48 @@ main {
     0px 4px 8px rgba(50, 50, 71, 0.06);
   border-radius: 1rem;
 }
-
+.main__inner__extensions__inner-cards {
+  gap: 2.4rem;
+}
+.main__inner__extensions__inner-cards__card {
+  gap: 1.2rem;
+}
+.main__inner__extensions__inner-cards__card__img {
+  padding: 5rem;
+  width: 15.2rem;
+  height: 15rem;
+  border-radius: 10px;
+}
+.main__inner__extensions__inner-cards__card__img * {
+  color: #fff;
+}
+.main__inner__extensions__inner-cards__card__img--orange {
+  background: #ffa26b;
+}
+.main__inner__extensions__inner-cards__card__img--green {
+  background: #00c48c;
+}
 .w-full {
   width: 100%;
 }
 a {
   text-decoration: underline;
   color: #21b8f9;
+}
+.main__inner__news__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3.2rem;
+}
+.main__inners__news__cards__card__info {
+  padding: 0.6rem 0;
+}
+.main__inner__news__cards__card {
+  gap: 1.6rem;
+}
+.main__inner__news__cards__card__img {
+  width: 10rem;
+  height: 10rem;
 }
 /* Flexbox */
 .flex {
@@ -200,6 +241,9 @@ a {
 }
 /* Tablet */
 @media screen and (min-width: 900px) {
+  .main__inner__extensions__inner_cards {
+    justify-content: space-between;
+  }
   .main__inner__stats {
     flex-direction: row;
     width: 100%;
@@ -207,8 +251,9 @@ a {
   .main__inner {
     width: 70%;
   }
-  .main__inner__stats__card {
-    /* flex: 1; */
+  .main__inner__news__cards {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
